@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>InternetMagazine</title>
+  <title>Internet|Market</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-
-<nav id="nav">
+<header>
+<nav id="nav" class="clearfix">
   <div id="page_nav">
     <%= link_to "Home", root_path %>
     <%= link_to "Shop", products_path %>
@@ -27,13 +27,14 @@
 <% end %>
   </div>
 </nav>
+</header>
 
 <div id="main_wrap">
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 </div>
 
-<%= yield %>
+<div class="container"><%= yield %></div>
 
 </body>
 </html>

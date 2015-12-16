@@ -1,5 +1,10 @@
 <h1>Your Card</h1>
+
+<% if @cart.empty? %>
+    <p>Your cart is currently empty</p>
+    <% else %>
 <%= link_to 'Empty Your Cart', cart_clear_path %>
+    <% end %>
 <br><br><br>
 
 

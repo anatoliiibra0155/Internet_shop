@@ -13,42 +13,65 @@
  *= require_tree .
  *= require_self
  */
-
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 *{
     margin: 0;
     padding: 0;
 }
 
-#nav{
-    width: 100%;
-    height: 60px;
-    background: #000;
-    float: left;
+body {
+    font-family: Raleway;
 }
 
-#page_nav a{
+#nav{
+    background: #009688;
+    padding: 0 5%;
+}
+
+#page_nav a, #sign_in a{
     line-height: 60px;
     color: #fff;
     padding: 0 20px 0 20px;
     text-decoration: none;
+    display: inline-block;
+    -webkit-transition: background  ease-in 0.5s;
+    -moz-transition: background  ease-in 0.5s;
+    -o-transition: background  ease-in 0.5s;
+    transition: background  ease-in 0.5s;
+}
+
+#page_nav a:hover, #sign_in a:hover{
+    background: #00695C;
+    -webkit-transition: background  ease-out 0.5s;
+    -moz-transition: background  ease-out 0.5s;
+    -o-transition: background  ease-out 0.5s;
+    transition: background  ease-out 0.5s;
 }
 
 #page_nav{
-    margin: 0 0 0 5%;
     float: left;
 }
 
 #sign_in a{
-    line-height: 60px;
-    color: #fff;
-    padding: 0 20px 0 20px;
-    text-decoration: none;
     float: right;
-    margin: 0 5% 0 0;
 }
 
 #main_wrap{
     width: 90%;
     float: left;
     margin: 20px 5% 0 5%;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '.';
+    display: block;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+
+}
+
+.container{
+    padding: 0 5%;
 }
