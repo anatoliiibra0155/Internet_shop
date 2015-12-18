@@ -23,7 +23,7 @@ body {
     font-family: Raleway;
 }
 
-#nav{
+#nav, .footer{
     background: #009688;
     padding: 0 5%;
 }
@@ -74,4 +74,13 @@ body {
 
 .container{
     padding: 0 5%;
+}
+
+.main-photo > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    height: 60px;
 }
